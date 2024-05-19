@@ -91,7 +91,7 @@ class StartPage extends StatelessWidget {
             children: [
               ElevatedButton.icon(
                 onPressed: state.nextPage,
-                label: Text("Iniciar Quiz"),
+                label: Text("Начать викторину"),
                 icon: Icon(Icons.poll),
               )
             ],
@@ -180,7 +180,7 @@ class QuestionPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Text(correct ? "Acertou miseravi" : "Num consegue né Moises?"),
+              Text(correct ? "Всё верно" : "Num consegue né Moises?"),
               Text(
                 option.detail,
                 style: TextStyle(fontSize: 18, color: Colors.white24),
@@ -193,7 +193,7 @@ class QuestionPage extends StatelessWidget {
                   Navigator.pop(context);
                 },
                 child: Text(
-                  correct ? "Adiante" : "Tente novamente",
+                  correct ? "Вперед" : "Попробуйте еще раз",
                   style: TextStyle(
                     color: Colors.white,
                     letterSpacing: 1.5,
@@ -220,7 +220,7 @@ class FinalPage extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text("Parabens! Você completou o quiz ${quiz.title}"),
+          Text("Поздравляем! Вы завершили викторину ${quiz.title}"),
           const Divider(),
           Image.asset('assets/congrats.gif'),
           const Divider(),
@@ -233,7 +233,7 @@ class FinalPage extends StatelessWidget {
                 (route) => false,
               );
             },
-            label: Text("Marcar como concluido"),
+            label: Text("Отметить как завершенное"),
             icon: Icon(FontAwesomeIcons.check),
           )
         ],

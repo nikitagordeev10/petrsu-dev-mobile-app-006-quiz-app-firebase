@@ -13,8 +13,8 @@ class ProfilePage extends StatelessWidget {
     print(user.toString());
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
-        title: Text("P R O F I L E"),
+        backgroundColor: Color(0xFF1AACBC),
+        title: Text("Профиль"),
       ),
       body: SizedBox(
         width: double.infinity,
@@ -32,10 +32,10 @@ class ProfilePage extends StatelessWidget {
               height: 20,
             ),
             Text(
-              user?.displayName ?? "Guest",
+              user?.displayName ?? "Гость",
               style: TextStyle(fontSize: 20.0),
             ),
-            Text(user?.email ?? "none provided"),
+            Text(user?.email ?? "Адрес электронной почты не указан"),
             SizedBox(
               height: 30,
             ),
@@ -45,7 +45,7 @@ class ProfilePage extends StatelessWidget {
                 Navigator.of(context)
                     .pushNamedAndRemoveUntil('/', (route) => false);
               },
-              child: Text("Signout"),
+              child: Text("Выход"),
             ),
           ],
         ),

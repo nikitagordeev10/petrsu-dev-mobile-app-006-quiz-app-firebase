@@ -9,7 +9,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("L O G I N"),
+        title: Text("Войти"),
       ),
       body: Container(
         padding: EdgeInsets.all(30),
@@ -17,30 +17,32 @@ class LoginPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            FlutterLogo(
-              size: 150,
+            Image.asset(
+              'assets/icon/icon_square.png',
+              width: 150,
+              height: 150,
             ),
             Flexible(
               child: LoginButton(
-                color: Colors.deepPurpleAccent,
+                color: Color(0xFF1AACBC),
                 icon: FontAwesomeIcons.userNinja,
-                text: "Continuar como guest",
+                text: "Продолжить как гость",
                 loginMethod: AuthService().anonLogin,
               ),
             ),
             Flexible(
               child: LoginButton(
-                color: Colors.deepPurpleAccent,
+                color: Color(0xFF1AACBC),
                 icon: FontAwesomeIcons.google,
-                text: "Continuar com Google",
+                text: "Продолжить с Google",
                 loginMethod: AuthService().googleLogin,
               ),
             ),
             Flexible(
               child: LoginButton(
-                color: Colors.deepPurpleAccent,
+                color: Color(0xFF1AACBC),
                 icon: FontAwesomeIcons.apple,
-                text: "Continuar com Apple",
+                text: "Продолжить с Apple",
                 loginMethod: AuthService().signInWithApple,
               ),
             )

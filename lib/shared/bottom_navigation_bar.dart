@@ -9,21 +9,21 @@ class BottomNavBar extends StatelessWidget {
     return BottomNavigationBar(
       items: const [
         BottomNavigationBarItem(
-          label: "Topics",
+          label: "Викторина",
           icon: Icon(
             FontAwesomeIcons.graduationCap,
             size: 20,
           ),
         ),
         BottomNavigationBarItem(
-          label: "About",
+          label: "Справочник",
           icon: Icon(
             FontAwesomeIcons.bolt,
             size: 20,
           ),
         ),
         BottomNavigationBarItem(
-          label: "Profile",
+          label: "Профиль",
           icon: Icon(
             FontAwesomeIcons.circleUser,
             size: 20,

@@ -60,7 +60,7 @@ class AuthService {
   }
 
   Future<void> googleLogin() async {
-    print("Vou tentar logar");
+    print("Попробую войти");
 
     try {
       final googleUser = await GoogleSignIn().signIn();

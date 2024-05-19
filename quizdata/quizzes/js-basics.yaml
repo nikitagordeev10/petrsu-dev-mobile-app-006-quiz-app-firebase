@@ -2,14 +2,20 @@ id: js-basics
 title: 'JavaScript Basics'
 questions:
     -
-        text: 'JavaScript is a compiled language'
+        text: 'Столица республики Карелия'
         options:
             -
                 correct: false
-                value: 'true'
+                value: 'Кижи'
+            -
+                correct: false
+                value: 'Москва'
+            -
+                correct: false
+                value: 'Санкт-Петербург'
             -
                 correct: true
-                value: 'false'
+                value: 'Петрозаводск'
     -
         text: 'JavaScript is a strongly-typed language'
         options:
