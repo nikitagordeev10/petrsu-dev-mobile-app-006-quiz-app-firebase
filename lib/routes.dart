@@ -1,8 +1,8 @@
-import 'package:quizapp/about/about_page.dart';
-import 'package:quizapp/home/home_page.dart';
-import 'package:quizapp/login/login_page.dart';
-import 'package:quizapp/topics/topics_page.dart';
-import 'package:quizapp/profile/profile_page.dart';
+import 'package:museumguide/about/about_page.dart';
+import 'package:museumguide/home/home_page.dart';
+import 'package:museumguide/login/login_page.dart';
+import 'package:museumguide/topics/topics_page.dart';
+import 'package:museumguide/profile/profile_page.dart';
 
 var appRoutes = {
   '/': (context) => const HomePage(),

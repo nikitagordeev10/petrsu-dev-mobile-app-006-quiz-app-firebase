@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:quizapp/services/firestore.dart';
-import 'package:quizapp/services/models.dart';
-import 'package:quizapp/shared/bottom_navigation_bar.dart';
-import 'package:quizapp/shared/error.dart';
-import 'package:quizapp/shared/loading.dart';
-import 'package:quizapp/topics/topic_item.dart';
-import 'package:quizapp/topics/topics_drawer.dart';
+import 'package:museumguide/services/firestore.dart';
+import 'package:museumguide/services/models.dart';
+import 'package:museumguide/shared/bottom_navigation_bar.dart';
+import 'package:museumguide/shared/error.dart';
+import 'package:museumguide/shared/loading.dart';
+import 'package:museumguide/topics/topic_item.dart';
+import 'package:museumguide/topics/topics_drawer.dart';
 
 class TopicsPage extends StatelessWidget {
   const TopicsPage({super.key});

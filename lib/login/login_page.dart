@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:quizapp/services/auth_service.dart';
+import 'package:museumguide/services/auth_service.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});

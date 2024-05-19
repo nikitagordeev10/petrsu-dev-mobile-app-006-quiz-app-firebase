@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp/services/models.dart';
-import 'package:quizapp/shared/progress_bar.dart';
-import 'package:quizapp/topics/topics_drawer.dart';
+import 'package:museumguide/services/models.dart';
+import 'package:museumguide/shared/progress_bar.dart';
+import 'package:museumguide/topics/topics_drawer.dart';
 
 class TopicItem extends StatelessWidget {
   final Topic topic;

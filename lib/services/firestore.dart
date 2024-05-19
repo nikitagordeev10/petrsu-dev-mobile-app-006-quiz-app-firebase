@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:quizapp/services/auth_service.dart';
-import 'package:quizapp/services/models.dart';
+import 'package:museumguide/services/auth_service.dart';
+import 'package:museumguide/services/models.dart';
 import 'package:rxdart/rxdart.dart';
 
 class FirestoreService {

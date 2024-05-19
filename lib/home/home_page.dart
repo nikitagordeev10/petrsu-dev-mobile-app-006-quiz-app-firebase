@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp/login/login_page.dart';
-import 'package:quizapp/services/auth_service.dart';
-import 'package:quizapp/topics/topics_page.dart';
+import 'package:museumguide/login/login_page.dart';
+import 'package:museumguide/services/auth_service.dart';
+import 'package:museumguide/topics/topics_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

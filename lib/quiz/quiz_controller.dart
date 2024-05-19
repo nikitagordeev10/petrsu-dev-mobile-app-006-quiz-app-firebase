@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp/services/models.dart';
+import 'package:museumguide/services/models.dart';
 
 class QuizController with ChangeNotifier {
   double _progress = 0.0;

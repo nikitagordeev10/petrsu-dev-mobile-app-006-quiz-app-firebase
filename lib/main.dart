@@ -1,12 +1,12 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:quizapp/firebase_options.dart';
-import 'package:quizapp/routes.dart';
-import 'package:quizapp/services/firestore.dart';
-import 'package:quizapp/services/models.dart';
-import 'package:quizapp/shared/loading.dart';
-import 'package:quizapp/theme.dart';
+import 'package:museumguide/firebase_options.dart';
+import 'package:museumguide/routes.dart';
+import 'package:museumguide/services/firestore.dart';
+import 'package:museumguide/services/models.dart';
+import 'package:museumguide/shared/loading.dart';
+import 'package:museumguide/theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

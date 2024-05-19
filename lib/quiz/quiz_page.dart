@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
-import 'package:quizapp/quiz/quiz_controller.dart';
-import 'package:quizapp/services/firestore.dart';
-import 'package:quizapp/services/models.dart';
-import 'package:quizapp/shared/error.dart';
-import 'package:quizapp/shared/loading.dart';
-import 'package:quizapp/shared/progress_bar.dart';
+import 'package:museumguide/quiz/quiz_controller.dart';
+import 'package:museumguide/services/firestore.dart';
+import 'package:museumguide/services/models.dart';
+import 'package:museumguide/shared/error.dart';
+import 'package:museumguide/shared/loading.dart';
+import 'package:museumguide/shared/progress_bar.dart';
 
 class QuizPage extends StatelessWidget {
   final String quizId;
