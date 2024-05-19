@@ -1,0 +1,9 @@
+quizzes:
+    -
+        title: 'Викторина 1'
+        description: 'Уровень сложности: легко'
+        id: culture_of_karelia_easy
+
+id: culture_of_karelia
+img: culture_of_karelia.png
+title: "Culture of Karelia"

@@ -1,0 +1,135 @@
+description: 'Выберите один правильный ответ в квизе'
+topic: karelian_cuisine
+id: karelian_cuisine_easy
+title: 'Викторина 1'
+questions:
+    -
+        text: 'КАЛА-КЕЙТО'
+        options:
+            -
+                correct: true
+                value: "Уха с добавлением молока"
+#                detail: 'Nope, that''s how you should refer to the old Angular version1 framework'
+            -
+                correct: false
+                value: "Рисовая каша"
+#                detail: 'Nailed It!'
+            -
+                correct: false
+                value: "Карельская кока-кола"
+#                detail: 'Nope, Angular is currently on version 8, so that doesn''t really work.'
+
+    -
+        text: 'МАЙТОКАЛАКЕЙТТО'
+        options:
+            -
+                correct: false
+                value: 'Запеченная рыба'
+            -
+                correct: true
+                value: 'Рыба в молоке'
+            -
+                correct: false
+                value: 'Сырая рыба'
+    -
+        text: 'СУЛЬЧИНЫ'
+        options:
+            -
+                correct: false
+                value: 'Булочки из ржаной муки'
+            -
+                correct: true
+                value: 'Сладкие оладушки'
+            -
+                correct: false
+                value: 'Сытные блины с начинкой из рисовой каши'
+    -
+        text: 'СКАНЦЫ'
+        options:
+            -
+                correct: true
+                value: 'Хрустящие лепешки'
+            -
+                correct: false
+                value: 'Мягкие пшеничные лепешки'
+            -
+                correct: false
+                value: 'Тапочки'
+    -
+        text: 'КАЛАЛИМТИККО'
+        options:
+            -
+                correct: false
+                value: 'Брусничный соус'
+            -
+                correct: true
+                value: 'Рыба с жареным картофелем'
+            -
+                correct: false
+                value: 'Салат с лосятиной'
+    -
+        text: 'КАЛАЛАДИКА'
+        options:
+            -
+                correct: false
+                value: 'Пшенная каша'
+            -
+                correct: true
+                value: 'Карельская пицца'
+            -
+                correct: false
+                value: 'Запеканка'
+    -
+        text: 'КАКРИСКУККА'
+        options:
+            -
+                correct: false
+                value: 'Карри'
+            -
+                correct: true
+                value: 'Пирог с репой'
+            -
+                correct: false
+                value: 'Рыбный суп'
+    -
+        text: 'ПАННУКАККУ'
+        options:
+            -
+                correct: false
+                value: 'Пирог с капустой'
+            -
+                correct: false
+                value: 'Панна котта'
+            -
+                correct: true
+                value: 'Сдобная лепешка'
+    -
+        text: 'КАПКАРАТ'
+        options:
+            -
+                correct: false
+                value: 'Пресные блины'
+            -
+                correct: false
+                value: 'Домашний торт'
+            -
+                correct: true
+                value: 'Варенье из тыквы'
+    -
+        text: 'КОКАЧИ'
+        options:
+            -
+                correct: false
+                value: 'Фрикадельки'
+            -
+                correct: false
+                value: 'Гороховые пирожки'
+            -
+                correct: true
+                value: 'Лепешки с брусникой'
+
+
+
+
+
+

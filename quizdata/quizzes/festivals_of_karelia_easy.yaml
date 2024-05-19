@@ -1,0 +1,33 @@
+description: 'Выберите один правильный ответ в квизе'
+topic: festivals_of_karelia
+id: festivals_of_karelia_easy
+title: 'Викторина 1'
+questions:
+    -
+        text: 'Когда отмечается "День Карелии"?'
+        options:
+            -
+                correct: true
+                value: "8 июня"
+            -
+                correct: false
+                value: "30 мая"
+            -
+                correct: false
+                value: "6 апреля"
+    -
+        text: 'Когда отмечается день освобождения Карелии от фашистских захватчиков?'
+        options:
+            -
+                correct: true
+                value: "30 сентября"
+            -
+                correct: false
+                value: "30 мая"
+            -
+                correct: false
+                value: "6 апреля"
+
+
+
+

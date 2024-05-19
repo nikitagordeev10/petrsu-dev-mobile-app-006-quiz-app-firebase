@@ -24,10 +24,11 @@ class ProfilePage extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 50,
-              backgroundImage: NetworkImage(
-                user?.photoURL ?? "https://placeholder.com/50/50",
+              backgroundImage: AssetImage(
+                'assets/avatars/user.png',
               ),
             ),
+
             SizedBox(
               height: 20,
             ),

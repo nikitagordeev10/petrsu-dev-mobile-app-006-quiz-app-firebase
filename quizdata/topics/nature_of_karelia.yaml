@@ -1,0 +1,9 @@
+quizzes:
+    -
+        title: 'Викторина 1'
+        description: 'Уровень сложности: легко'
+        id: nature_of_karelia_easy
+
+id: nature_of_karelia
+img: nature_of_karelia.png
+title: "Природа Карелии"

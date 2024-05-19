@@ -8,47 +8,50 @@ import 'package:museumguide/shared/loading.dart';
 import 'package:museumguide/topics/topic_item.dart';
 import 'package:museumguide/topics/topics_drawer.dart';
 
+// Страница со списком тем
 class TopicsPage extends StatelessWidget {
   const TopicsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    // Возвращаем будущий построитель с данными о темах
     return FutureBuilder<List<Topic>>(
-      future: FirestoreService().getTopics(),
+      future: FirestoreService().getTopics(), // Получаем данные о темах из Firestore
       builder: (context, snapshot) {
+        // Если данные загружаются, показываем экран загрузки
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const LoadingScreen();
-        } else if (snapshot.hasData) {
-          var topics = snapshot.data!;
+        }
+        // Если данные доступны
+        else if (snapshot.hasData) {
+          var topics = snapshot.data!; // Получаем список тем
           return Scaffold(
             appBar: AppBar(
-              actions: [
-                IconButton(
-                  icon: Icon(
-                    FontAwesomeIcons.circleUser,
-                    color: Colors.pink[200],
-                  ),
-                  onPressed: () => Navigator.pushNamed(context, '/profile'),
-                )
-              ],
+              backgroundColor: Color(0xFF1AACBC),
+              title: Text("Викторина"),
             ),
-            drawer: TopicDrawer(topics: topics),
-            bottomNavigationBar: BottomNavBar(),
+
+            bottomNavigationBar: BottomNavBar(), // Добавляем нижнюю навигационную панель
             body: GridView.count(
+              // Создаем сетку с темами
               primary: false,
               padding: const EdgeInsets.all(20.0),
               crossAxisSpacing: 10.0,
               crossAxisCount: 2,
-              children: topics.map((topic) => TopicItem(topic: topic)).toList(),
+              children: topics.map((topic) => TopicItem(topic: topic)).toList(), // Создаем список виджетов для каждой темы
             ),
           );
-        } else if (snapshot.hasError) {
+        }
+        // Если произошла ошибка
+        else if (snapshot.hasError) {
           return ErrorMessage(
+            // Показываем сообщение об ошибке
             message: snapshot.error.toString(),
           );
         }
+        // Если данные не были найдены
         return Text(
-            "Nenhum dado foi localizado. Por favor verifique o banco de dados.");
+            "Данных не обнаружено. Пожалуйста, проверьте базу данных.");
       },
     );
   }

@@ -3,10 +3,11 @@ import 'package:provider/provider.dart';
 import 'package:museumguide/services/models.dart';
 
 class AnimatedProgressbar extends StatelessWidget {
-  final double value;
-  final double height;
+  final double value; // Значение прогресса, от 0 до 1
+  final double height; // Высота полосы прогресса
 
-  const AnimatedProgressbar({super.key, required this.value, this.height = 12});
+  // Конструктор класса
+  const AnimatedProgressbar({Key? key, required this.value, this.height = 12});
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +18,7 @@ class AnimatedProgressbar extends StatelessWidget {
           width: box.maxWidth,
           child: Stack(
             children: [
+              // Фоновая полоса прогресса
               Container(
                 height: height,
                 decoration: BoxDecoration(
@@ -26,6 +28,7 @@ class AnimatedProgressbar extends StatelessWidget {
                   ),
                 ),
               ),
+              // Анимированная полоса прогресса
               AnimatedContainer(
                 duration: const Duration(milliseconds: 800),
                 curve: Curves.easeOutCubic,
@@ -45,11 +48,12 @@ class AnimatedProgressbar extends StatelessWidget {
     );
   }
 
-  /// Always round negative or NaNs to min value
+  /// Функция для округления значения до минимального значения, если оно отрицательное или NaN
   _floor(double value, [min = 0.0]) {
     return value.sign <= min ? min : value;
   }
 
+  // Генерация цвета в зависимости от значения прогресса
   _colorGen(double value) {
     int rbg = (value * 255).toInt();
     return Colors.deepOrange.withGreen(rbg).withRed(255 - rbg);
@@ -57,7 +61,7 @@ class AnimatedProgressbar extends StatelessWidget {
 }
 
 class TopicProgress extends StatelessWidget {
-  const TopicProgress({super.key, required this.topic});
+  const TopicProgress({Key? key, required this.topic});
 
   final Topic topic;
 
@@ -66,6 +70,7 @@ class TopicProgress extends StatelessWidget {
     Report report = Provider.of<Report>(context);
     return Row(
       children: [
+        // Отображение количества завершенных тестов из общего числа тестов
         _progressCount(report, topic),
         Expanded(
           child: AnimatedProgressbar(
@@ -75,6 +80,7 @@ class TopicProgress extends StatelessWidget {
     );
   }
 
+  // Виджет для отображения количества завершенных тестов
   Widget _progressCount(Report report, Topic topic) {
     return Padding(
       padding: const EdgeInsets.only(left: 8),
@@ -85,13 +91,14 @@ class TopicProgress extends StatelessWidget {
     );
   }
 
+  // Расчет прогресса для темы
   double _calculateProgress(Topic topic, Report report) {
     try {
       int totalQuizzes = topic.quizzes.length;
       int completedQuizzes = report.topics[topic.id].length;
       return completedQuizzes / totalQuizzes;
     } catch (err) {
-      return 0.0;
+      return 0.0; // В случае ошибки возвращается нулевое значение прогресса
     }
   }
 }

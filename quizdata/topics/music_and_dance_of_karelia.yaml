@@ -1,0 +1,9 @@
+quizzes:
+    -
+        title: 'Викторина 1'
+        description: 'Уровень сложности: легко'
+        id: music_and_dance_of_karelia_easy
+
+id: music_and_dance_of_karelia
+img: music_and_dance_of_karelia.png
+title: "Музыка и танцы Карелии"

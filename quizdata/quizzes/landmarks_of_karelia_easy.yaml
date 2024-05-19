@@ -1,0 +1,34 @@
+description: 'Выберите один правильный ответ в квизе'
+topic: landmarks_of_karelia
+id: landmarks_of_karelia_easy
+title: 'Викторина 1'
+questions:
+    -
+        text: 'Как называется национальный парк, расположенный на территории Карелии и известный своими красивыми озерами и лесами?'
+        options:
+            -
+                correct: true
+                value: "Ладожские шхеры"
+            -
+                correct: false
+                value: "Плещеево озеро"
+            -
+                correct: false
+                value: "Зюраткуль"
+    -
+        text: 'Что такое Кижи?'
+        options:
+            -
+                correct: true
+                value: "Остров на озере Онежское, где расположены уникальные деревянные храмы"
+            -
+                correct: false
+                value: "Национальный парк с богатой флорой и фауной"
+            -
+                correct: false
+                value: "Город, известный своими древними петроглифами"
+
+
+
+
+

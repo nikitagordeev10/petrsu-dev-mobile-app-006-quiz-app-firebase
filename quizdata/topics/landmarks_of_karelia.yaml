@@ -1,0 +1,9 @@
+quizzes:
+    -
+        title: 'Викторина 1'
+        description: 'Уровень сложности: легко'
+        id: landmarks_of_karelia_easy
+
+id: landmarks_of_karelia
+img: landmarks_of_karelia.png
+title: "Достопримечательности Карелии"

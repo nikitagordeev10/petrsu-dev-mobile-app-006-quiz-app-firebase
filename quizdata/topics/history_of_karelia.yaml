@@ -1,0 +1,9 @@
+quizzes:
+    -
+        title: 'Викторина 1'
+        description: 'Уровень сложности: легко'
+        id: history_of_karelia_easy
+
+id: history_of_karelia
+img: history_of_karelia.png
+title: "История Карелии"

@@ -8,15 +8,16 @@ admin.initializeApp({
 const db = admin.firestore();
 
 const topics = [
-    'angular',
-    'flutter',
-    'cf',
-    'firebase',
-    'firestore',
-    'flutter',
-    'rxjs',
-    'js',
-    'ts'
+//    'inventions_of_karelia',
+    'karelian_cuisine',
+    'landmarks_of_karelia',
+    'traditional_crafts_of_karelia',
+    'history_of_karelia',
+    'nature_of_karelia',
+    'culture_of_karelia',
+    'festivals_of_karelia',
+//    'tourism_in_karelia',
+    'music_and_dance_of_karelia',
 ]
 
 

@@ -1,0 +1,22 @@
+description: 'Выберите один правильный ответ в квизе'
+topic: music_and_dance_of_karelia
+id: music_and_dance_of_karelia_easy
+title: 'Викторина 1'
+questions:
+    -
+        text: 'Какой инструмент является символом карельской музыкальной культуры?'
+        options:
+            -
+                correct: false
+                value: "Гармонь"
+            -
+                correct: false
+                value: "Скрипка"
+            -
+                correct: true
+                value: "Кантеле"
+
+
+
+
+

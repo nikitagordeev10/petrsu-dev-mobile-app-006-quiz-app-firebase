@@ -32,7 +32,7 @@ class _MainAppState extends State<MainApp> {
       future: _initialization,
       builder: (context, snapshot) {
         if (snapshot.hasError) {
-          return Text("Erro ao tentar recuperar informacoes");
+          return Text("Пожалуйста, свяжитесь с нами для восстановления информации.");
         }
 
         // Once complete, show your application

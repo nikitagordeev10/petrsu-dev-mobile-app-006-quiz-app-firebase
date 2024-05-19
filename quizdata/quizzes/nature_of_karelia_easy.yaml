@@ -1,0 +1,42 @@
+description: 'Выберите один правильный ответ в квизе'
+topic: nature_of_karelia
+id: nature_of_karelia_easy
+title: 'Викторина 1'
+questions:
+    -
+        text: 'Где находится Карелия?'
+        options:
+            -
+                correct: true
+                value: "В Северо-Западной части России"
+            -
+                correct: false
+                value: "На Дальнем Востоке России"
+            -
+                correct: false
+                value: "На Урале"
+
+    -
+        text: 'Какой национальный парк находится на территории Карелии?'
+        options:
+            -
+                correct: false
+                value: 'Кенозерский национальный парк'
+            -
+                correct: true
+                value: 'Водлозерский национальный парк'
+            -
+                correct: false
+                value: 'Приокско-Террасный заповедник'
+    -
+        text: 'Какой природный памятник Карелии знаменит своими водопадами?'
+        options:
+            -
+                correct: false
+                value: 'Ниагара'
+            -
+                correct: true
+                value: 'Кивач'
+            -
+                correct: false
+                value: 'Плитвицкие озера'

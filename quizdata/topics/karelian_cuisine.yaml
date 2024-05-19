@@ -1,0 +1,9 @@
+quizzes:
+    -
+        title: 'Викторина 1'
+        description: 'Уровень сложности: легко'
+        id: karelian_cuisine_easy
+
+id: karelian_cuisine
+img: karelian_cuisine.png
+title: "Карельская кухня"

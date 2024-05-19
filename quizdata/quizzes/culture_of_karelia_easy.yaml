@@ -1,0 +1,45 @@
+description: 'Выберите один правильный ответ в квизе'
+topic: culture_of_karelia
+id: culture_of_karelia_easy
+title: 'Викторина 1'
+questions:
+    -
+        text: 'Какое музыкальное произведение является национальным эпосом Карелии?'
+        options:
+            -
+                correct: true
+                value: "Калевала"
+            -
+                correct: false
+                value: "Иллиада"
+            -
+                correct: false
+                value: "Беовульф"
+    -
+        text: 'Какой знаменитый карельский музыкальный инструмент напоминает кантеле?'
+        options:
+            -
+                correct: false
+                value: "Балалайка"
+            -
+                correct: true
+                value: "Гусли"
+            -
+                correct: false
+                value: "Бандура"
+    -
+        text: 'Какое из этих блюд является традиционным карельским блюдом?'
+        options:
+            -
+                correct: false
+                value: "Пирожки"
+            -
+                correct: true
+                value: "Калитки"
+            -
+                correct: false
+                value: "Вареники"
+
+
+
+

@@ -30,7 +30,7 @@ class BottomNavBar extends StatelessWidget {
           ),
         ),
       ],
-      fixedColor: Colors.deepPurple[200],
+      fixedColor: Color(0xFF1AACBC),
       onTap: (value) {
         switch (value) {
           case 0:

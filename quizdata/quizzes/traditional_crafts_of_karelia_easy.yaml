@@ -1,0 +1,45 @@
+description: 'Выберите один правильный ответ в викторине'
+topic: traditional_crafts_of_karelia
+id: traditional_crafts_of_karelia_easy
+title: 'Викторина 1'
+questions:
+    -
+        text: 'Какое традиционное карельское ремесло связано с производством деревянных изделий?'
+        options:
+            -
+                correct: false
+                value: "Шитье лоскутных одеял"
+            -
+                correct: false
+                value: "Выделка кожи"
+            -
+                correct: true
+                value: "Резьба по дереву"
+    -
+        text: 'Как называется традиционное карельское ремесло, связанное с изготовлением изделий из кожи?'
+        options:
+            -
+                correct: false
+                value: "Кудельное дело"
+            -
+                correct: false
+                value: "Кузнечное ремесло"
+            -
+                correct: true
+                value: "Кожевенное дело"
+    -
+        text: 'Какое из этих ремесел Карелии связано с созданием тканей?'
+        options:
+            -
+                correct: false
+                value: "Изготовление бумажных изделий"
+            -
+                correct: true
+                value: "Ткачество"
+            -
+                correct: false
+                value: "Литье свечей"
+
+
+
+
