@@ -40,7 +40,7 @@ flutter:
   assets:
   - assets/
   - assets/covers/
-  - assets/congrats.gif
+  - assets/illustrations/
   - assets/icon/
   - assets/avatars/
   - assets/guide/

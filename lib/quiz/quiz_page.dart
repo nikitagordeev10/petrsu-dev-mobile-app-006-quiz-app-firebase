@@ -222,7 +222,11 @@ class FinalPage extends StatelessWidget {
         children: [
           Text("Поздравляем! Вы завершили викторину ${quiz.title}"),
           const Divider(),
-          Image.asset('assets/congrats.gif'),
+          SizedBox(
+            width: 200,
+            height: 200,
+            child: Image.asset('assets/illustrations/trophy.png'),
+          ),
           const Divider(),
           ElevatedButton.icon(
             onPressed: () {
