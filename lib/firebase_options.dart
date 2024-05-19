@@ -69,6 +69,6 @@ class DefaultFirebaseOptions {
     messagingSenderId: '460922085051',
     projectId: 'dev-helder-quizapp',
     storageBucket: 'dev-helder-quizapp.appspot.com',
-    iosBundleId: 'dev.helder.quizapp.quizapp',
+    iosBundleId: 'com.nikitagordeev10.museumguide',
   );
 }
