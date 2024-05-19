@@ -1,4 +1,4 @@
-description: 'Выберите один правильный ответ в квизе'
+description: 'Выберите один правильный ответ в викторине'
 topic: history_of_karelia
 id: history_of_karelia_easy
 title: 'Викторина 1'
@@ -17,9 +17,7 @@ questions:
                 value: "Русские"
 
     -
-        text: 'Какое из этих озер является крупнейшим в Карелии?
-
-'
+        text: 'Какое из этих озер является крупнейшим в Карелии?'
         options:
             -
                 correct: false
