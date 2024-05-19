@@ -47,28 +47,32 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCpIh5AggTydiRaHS1xQJ8MEBA0CeuzF6U',
-    appId: '1:460922085051:web:3b6f51eede5fa94dc2d39e',
-    messagingSenderId: '460922085051',
-    projectId: 'dev-helder-quizapp',
-    authDomain: 'dev-helder-quizapp.firebaseapp.com',
-    storageBucket: 'dev-helder-quizapp.appspot.com',
+    apiKey: 'AIzaSyDJAkhE6CQEKOPGzZ5n3HRncsOypKsdaTA',
+    appId: '1:103731987395:web:4a28c2ea5423f059b17376',
+    messagingSenderId: '103731987395',
+    projectId: 'museumguide-fde28',
+    authDomain: 'museumguide-fde28.firebaseapp.com',
+    storageBucket: 'museumguide-fde28.appspot.com',
+    measurementId: 'G-ZXR976ZCV4',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBvu9W8ixQcJMdQQ0oVbU1BLWpOazQCtBE',
-    appId: '1:460922085051:android:1340f238502bb8aec2d39e',
-    messagingSenderId: '460922085051',
-    projectId: 'dev-helder-quizapp',
-    storageBucket: 'dev-helder-quizapp.appspot.com',
+    apiKey: 'AIzaSyDVWiTzbsYoUHLzCzhOIbWWuVbwBUv-3pI',
+    appId: '1:103731987395:android:a580634c62c76728b17376',
+    messagingSenderId: '103731987395',
+    projectId: 'museumguide-fde28',
+    storageBucket: 'museumguide-fde28.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBbroIVir3oDACpbm2pzKtRkBNzp12Aqcg',
-    appId: '1:460922085051:ios:c459cca768fcf68fc2d39e',
-    messagingSenderId: '460922085051',
-    projectId: 'dev-helder-quizapp',
-    storageBucket: 'dev-helder-quizapp.appspot.com',
+    apiKey: 'AIzaSyBuTxHtICFzCY8dE0l2G1Ec7ltXx148ZJY',
+    appId: '1:103731987395:ios:1f52bbca155d319cb17376',
+    messagingSenderId: '103731987395',
+    projectId: 'museumguide-fde28',
+    storageBucket: 'museumguide-fde28.appspot.com',
+    androidClientId: '103731987395-mjkqfmrg48rpufv5m9em3hivoaqlb82s.apps.googleusercontent.com',
+    iosClientId: '103731987395-pc6dvpq1556milq6f6o00spqnlpfvjoc.apps.googleusercontent.com',
     iosBundleId: 'com.nikitagordeev10.museumguide',
   );
+
 }
