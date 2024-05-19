@@ -2,7 +2,7 @@ quizzes:
     -
         title: 'Викторина 1'
         description: 'Уровень сложности: легко'
-        id: landmarks_of_karelia_easy
+        id: traditional_crafts_of_karelia_easy
 
 id: traditional_crafts_of_karelia
 img: traditional_crafts_of_karelia.png

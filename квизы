@@ -11,3 +11,24 @@
 
 
 Создадим приложение, которое поможет жителям Карелии и путешетвенникам лучше узнать свой регион.
+
+Firebase configuration file lib\firebase_options.dart generated successfully with the following Firebase apps:
+
+Platform  Firebase App Id
+web       1:103731987395:web:4a28c2ea5423f059b17376
+android   1:103731987395:android:a580634c62c76728b17376
+ios       1:103731987395:ios:1f52bbca155d319cb17376
+
+
+
+
+flutter pub get
+flutterfire configure
+
+firebase login
+firebase init
+build/web
+nikitagordeev10/petrsu_museum_guide
+flutter build web
+firebase deploy
+

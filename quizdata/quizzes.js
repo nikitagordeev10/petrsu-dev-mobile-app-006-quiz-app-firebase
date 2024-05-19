@@ -25,6 +25,7 @@ const quizzes = [
     'music_and_dance_of_karelia_easy',
 ]
 
+
 // Асинхронная функция для обновления квиза по его идентификатору
 const update = async (quizId) => {
     // Загружаем данные квиза из YAML файла

@@ -180,7 +180,7 @@ class QuestionPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Text(correct ? "Всё верно" : "Num consegue né Moises?"),
+              Text(correct ? "Всё верно" : "Не верно"),
               Text(
                 option.detail,
                 style: TextStyle(fontSize: 18, color: Colors.white24),

@@ -1,1 +1,45 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"dev-helder-quizapp","appId":"1:460922085051:android:1340f238502bb8aec2d39e","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"dev-helder-quizapp","appId":"1:460922085051:ios:c459cca768fcf68fc2d39e","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"dev-helder-quizapp","configurations":{"android":"1:460922085051:android:1340f238502bb8aec2d39e","ios":"1:460922085051:ios:c459cca768fcf68fc2d39e","web":"1:460922085051:web:3b6f51eede5fa94dc2d39e"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "museumguide-fde28",
+          "appId": "1:103731987395:android:a580634c62c76728b17376",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "dev-helder-quizapp",
+          "appId": "1:460922085051:ios:c459cca768fcf68fc2d39e",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "museumguide-fde28",
+          "configurations": {
+            "android": "1:103731987395:android:a580634c62c76728b17376",
+            "ios": "1:103731987395:ios:1f52bbca155d319cb17376",
+            "web": "1:103731987395:web:4a28c2ea5423f059b17376"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
