@@ -7,7 +7,12 @@ class AboutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Справочник"),
+        // backgroundColor: Color(0xFF1AACBC),
+        title: Text(
+          "Справочник",
+          textAlign: TextAlign.center, // Выравнивание текста по центру внутри AppBar
+        ),
+        centerTitle: true, // Устанавливаем центрирование заголовка
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

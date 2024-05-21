@@ -13,8 +13,12 @@ class ProfilePage extends StatelessWidget {
     print(user.toString());
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFF1AACBC),
-        title: Text("Профиль"),
+        // backgroundColor: Color(0xFF1AACBC),
+        title: Text(
+          "Профиль",
+          textAlign: TextAlign.center, // Выравнивание текста по центру внутри AppBar
+        ),
+        centerTitle: true, // Устанавливаем центрирование заголовка
       ),
       body: SizedBox(
         width: double.infinity,
@@ -43,11 +47,20 @@ class ProfilePage extends StatelessWidget {
             ElevatedButton(
               onPressed: () async {
                 await AuthService().signOut();
-                Navigator.of(context)
-                    .pushNamedAndRemoveUntil('/', (route) => false);
+                Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
               },
-              child: Text("Выход"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color(0xFF1AACBC), // Цвет фона кнопки
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10), // Закругление углов радиусом 10
+                ),
+              ),
+              child: Text(
+                "Выход",
+                style: TextStyle(color: Colors.white), // Цвет текста кнопки
+              ),
             ),
+
           ],
         ),
       ),

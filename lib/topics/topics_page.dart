@@ -27,8 +27,12 @@ class TopicsPage extends StatelessWidget {
           var topics = snapshot.data!; // Получаем список тем
           return Scaffold(
             appBar: AppBar(
-              backgroundColor: Color(0xFF1AACBC),
-              title: Text("Викторина"),
+              // backgroundColor: Color(0xFF1AACBC),
+              title: Text(
+                "Викторина",
+                textAlign: TextAlign.center, // Выравнивание текста по центру внутри AppBar
+              ),
+              centerTitle: true, // Устанавливаем центрирование заголовка
             ),
 
             bottomNavigationBar: BottomNavBar(), // Добавляем нижнюю навигационную панель

@@ -91,11 +91,24 @@ class StartPage extends StatelessWidget {
             children: [
               ElevatedButton.icon(
                 onPressed: state.nextPage,
-                label: Text("Начать викторину"),
-                icon: Icon(Icons.poll),
-              )
+                label: Text(
+                  "Начать викторину",
+                  style: TextStyle(color: Colors.white),
+                ),
+                icon: Icon(
+                  Icons.poll,
+                  color: Colors.white,
+                ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color(0xFF1AACBC), // Цвет фона
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10), // Радиус углов
+                  ),
+                ),
+              ),
             ],
-          ),
+          )
+
         ],
       ),
     );
@@ -237,8 +250,20 @@ class FinalPage extends StatelessWidget {
                 (route) => false,
               );
             },
-            label: Text("Отметить как завершенное"),
-            icon: Icon(FontAwesomeIcons.check),
+            label: Text(
+              "Отметить как завершенное",
+              style: TextStyle(color: Colors.white),
+            ),
+            icon: Icon(
+              FontAwesomeIcons.check,
+              color: Colors.white,
+            ),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Color(0xFF1AACBC), // Фон кнопки
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10), // Радиус углов
+              ),
+            ),
           )
         ],
       ),

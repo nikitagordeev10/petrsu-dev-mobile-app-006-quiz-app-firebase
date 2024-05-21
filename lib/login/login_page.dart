@@ -9,7 +9,12 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Войти"),
+        // backgroundColor: Color(0xFF1AACBC),
+        title: Text(
+          "Вход",
+          textAlign: TextAlign.center, // Выравнивание текста по центру внутри AppBar
+        ),
+        centerTitle: true, // Устанавливаем центрирование заголовка
       ),
       body: Container(
         padding: EdgeInsets.all(30),
@@ -22,9 +27,16 @@ class LoginPage extends StatelessWidget {
               width: 150,
               height: 150,
             ),
+            Text(
+              'Узнай Карелию',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             Flexible(
               child: LoginButton(
-                color: Color(0xFF1AACBC),
                 icon: FontAwesomeIcons.userNinja,
                 text: "Продолжить как гость",
                 loginMethod: AuthService().anonLogin,
@@ -32,7 +44,6 @@ class LoginPage extends StatelessWidget {
             ),
             Flexible(
               child: LoginButton(
-                color: Color(0xFF1AACBC),
                 icon: FontAwesomeIcons.google,
                 text: "Продолжить с Google",
                 loginMethod: AuthService().googleLogin,
@@ -40,7 +51,6 @@ class LoginPage extends StatelessWidget {
             ),
             Flexible(
               child: LoginButton(
-                color: Color(0xFF1AACBC),
                 icon: FontAwesomeIcons.apple,
                 text: "Продолжить с Apple",
                 loginMethod: AuthService().signInWithApple,
@@ -53,19 +63,18 @@ class LoginPage extends StatelessWidget {
   }
 }
 
+
 class LoginButton extends StatelessWidget {
-  final Color color;
   final IconData icon;
   final String text;
   final Function loginMethod;
 
   const LoginButton({
-    super.key,
-    required this.color,
+    Key? key,
     required this.icon,
     required this.text,
     required this.loginMethod,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -78,11 +87,18 @@ class LoginButton extends StatelessWidget {
           color: Colors.white,
           size: 20,
         ),
-        style: TextButton.styleFrom(
-          padding: const EdgeInsets.all(24),
-          backgroundColor: color,
+        style: ElevatedButton.styleFrom(
+          padding: EdgeInsets.all(10),
+          backgroundColor: Color(0xFF1AACBC),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+          minimumSize: Size(double.infinity, 60), // Устанавливаем высоту кнопки
         ),
-        label: Text(text),
+        label: Text(
+          text,
+          style: TextStyle(color: Colors.white),
+        ),
       ),
     );
   }

@@ -4,6 +4,8 @@ import 'package:provider/provider.dart';
 import 'package:museumguide/quiz/quiz_page.dart';
 import 'package:museumguide/services/models.dart';
 
+// Виджет TopicDrawer представляет собой боковую панель (drawer),
+// которая отображает список тем с их соответствующими викторинами.
 class TopicDrawer extends StatelessWidget {
   final List<Topic> topics;
   const TopicDrawer({super.key, required this.topics});
@@ -23,7 +25,7 @@ class TopicDrawer extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 10, left: 10),
                   child: Text(
                     topic.title,
-                    // textAlign: TextAlign.left,
+                    // Заголовок темы
                     style: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -31,15 +33,16 @@ class TopicDrawer extends StatelessWidget {
                     ),
                   ),
                 ),
-                QuizList(topic: topic)
+                QuizList(topic: topic) // Список викторин для данной темы
               ],
             );
           },
-          separatorBuilder: (BuildContext context, int idx) => const Divider()),
+          separatorBuilder: (BuildContext context, int idx) => const Divider()), // Разделитель между темами
     );
   }
 }
 
+// Виджет QuizList представляет собой список карточек викторин для данной темы.
 class QuizList extends StatelessWidget {
   final Topic topic;
   const QuizList({super.key, required this.topic});
@@ -48,10 +51,10 @@ class QuizList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: topic.quizzes.map(
-        (quiz) {
+            (quiz) {
           return Card(
             shape:
-                const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+            const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
             elevation: 4,
             margin: const EdgeInsets.all(4),
             child: InkWell(
@@ -59,7 +62,7 @@ class QuizList extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (BuildContext context) => QuizPage(
-                      quizId: quiz.id,
+                      quizId: quiz.id, // Переход на страницу викторины при нажатии
                     ),
                   ),
                 );
@@ -68,13 +71,13 @@ class QuizList extends StatelessWidget {
                 padding: const EdgeInsets.all(8),
                 child: ListTile(
                   title: Text(
-                    quiz.title,
+                    quiz.title, // Заголовок викторины
                   ),
                   subtitle: Text(
-                    quiz.description,
+                    quiz.description, // Описание викторины
                     overflow: TextOverflow.fade,
                   ),
-                  leading: QuizBadge(topic: topic, quizId: quiz.id),
+                  leading: QuizBadge(topic: topic, quizId: quiz.id), // Значок статуса викторины
                 ),
               ),
             ),
@@ -85,6 +88,7 @@ class QuizList extends StatelessWidget {
   }
 }
 
+// Виджет QuizBadge отображает значок статуса викторины (выполнена или нет).
 class QuizBadge extends StatelessWidget {
   final String quizId;
   final Topic topic;
@@ -96,9 +100,9 @@ class QuizBadge extends StatelessWidget {
     Report report = Provider.of<Report>(context);
     List completed = report.topics[topic.id] ?? [];
     if (completed.contains(quizId)) {
-      return const Icon(FontAwesomeIcons.checkDouble, color: Colors.green);
+      return const Icon(FontAwesomeIcons.checkDouble, color: Colors.green); // Викторина выполнена
     } else {
-      return const Icon(FontAwesomeIcons.solidCircle, color: Colors.grey);
+      return const Icon(FontAwesomeIcons.solidCircle, color: Colors.grey); // Викторина не выполнена
     }
   }
 }

@@ -3,20 +3,25 @@ import 'package:museumguide/services/models.dart';
 import 'package:museumguide/shared/progress_bar.dart';
 import 'package:museumguide/topics/topics_drawer.dart';
 
+// Класс, представляющий элемент темы
 class TopicItem extends StatelessWidget {
+  // Поле для хранения информации о теме
   final Topic topic;
   const TopicItem({super.key, required this.topic});
 
   @override
   Widget build(BuildContext context) {
     return Hero(
+      // Используем тег для анимации перехода
       tag: topic.img,
       child: Card(
         clipBehavior: Clip.antiAlias,
         child: InkWell(
+          // Обработка нажатия на элемент
           onTap: () {
             Navigator.of(context).push(
               MaterialPageRoute(
+                // Переход на экран с подробной информацией о теме
                 builder: (BuildContext context) => TopicScreen(topic: topic),
               ),
             );
@@ -25,6 +30,7 @@ class TopicItem extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
+              // Изображение темы
               Flexible(
                 flex: 3,
                 child: SizedBox(
@@ -34,6 +40,7 @@ class TopicItem extends StatelessWidget {
                   ),
                 ),
               ),
+              // Заголовок темы
               Flexible(
                 child: Padding(
                   padding: const EdgeInsets.only(left: 10, right: 10),
@@ -48,6 +55,7 @@ class TopicItem extends StatelessWidget {
                   ),
                 ),
               ),
+              // Прогресс темы
               Flexible(child: TopicProgress(topic: topic)),
             ],
           ),
@@ -57,7 +65,9 @@ class TopicItem extends StatelessWidget {
   }
 }
 
+// Класс, представляющий экран с подробной информацией о теме
 class TopicScreen extends StatelessWidget {
+  // Поле для хранения информации о теме
   final Topic topic;
 
   const TopicScreen({super.key, required this.topic});
@@ -69,16 +79,20 @@ class TopicScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
       ),
       body: ListView(children: [
+        // Изображение с анимацией перехода
         Hero(
           tag: topic.img,
           child: Image.asset('assets/covers/${topic.img}',
               width: MediaQuery.of(context).size.width),
         ),
+        // Заголовок темы
         Text(
           topic.title,
+          textAlign: TextAlign.center,
           style: const TextStyle(
               height: 2, fontSize: 20, fontWeight: FontWeight.bold),
         ),
+        // Список викторин по теме
         QuizList(topic: topic)
       ]),
     );
