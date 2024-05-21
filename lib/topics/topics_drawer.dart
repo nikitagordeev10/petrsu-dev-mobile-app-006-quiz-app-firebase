@@ -100,7 +100,7 @@ class QuizBadge extends StatelessWidget {
     Report report = Provider.of<Report>(context);
     List completed = report.topics[topic.id] ?? [];
     if (completed.contains(quizId)) {
-      return const Icon(FontAwesomeIcons.checkDouble, color: Colors.green); // Викторина выполнена
+      return const Icon(FontAwesomeIcons.check, color: Colors.green); // Викторина выполнена
     } else {
       return const Icon(FontAwesomeIcons.solidCircle, color: Colors.grey); // Викторина не выполнена
     }
