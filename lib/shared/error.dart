@@ -6,7 +6,7 @@ class ErrorMessage extends StatelessWidget {
   final String message;
 
   // Создаем конструктор класса ErrorMessage, принимающий необязательный параметр message
-  const ErrorMessage({super.key, this.message = 'it broke'});
+  const ErrorMessage({super.key, this.message = 'Ошибка'});
 
   // Переопределяем метод build, который будет возвращать виджет с текстом сообщения
   @override

@@ -1,6 +1,7 @@
 import "package:json_annotation/json_annotation.dart";
 part 'models.g.dart';
 
+// Аннотация, указывающая, что этот класс может быть сериализован/десериализован в/из JSON.
 @JsonSerializable()
 class Topic {
   final String id;
@@ -17,7 +18,10 @@ class Topic {
     this.quizzes = const [],
   });
 
+  // Фабричный метод для создания экземпляра класса из JSON.
   factory Topic.fromJson(Map<String, dynamic> json) => _$TopicFromJson(json);
+
+  // Метод для преобразования объекта класса в JSON.
   Map<String, dynamic> toJson() => _$TopicToJson(this);
 }
 
@@ -42,6 +46,7 @@ class Quiz {
   factory Quiz.fromJson(Map<String, dynamic> json) => _$QuizFromJson(json);
   Map<String, dynamic> toJson() => _$QuizToJson(this);
 
+  // Переопределение метода toString для вывода объекта в виде строки JSON.
   @override
   String toString() {
     return toJson().toString();

@@ -17,7 +17,7 @@ class TopicItem extends StatelessWidget {
       child: Card(
         clipBehavior: Clip.antiAlias,
         child: InkWell(
-          // Обработка нажатия на элемент
+          // Обработка нажатия на элемент, эффект волны
           onTap: () {
             Navigator.of(context).push(
               MaterialPageRoute(

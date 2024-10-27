@@ -1,15 +1,13 @@
-# Quiz Questions for the Flutter Firebase Course
+# Вопросы для викторины
 
-This repo allows you to populate your database with quiz questions for [Flutter Firebase - The Full Course](https://fireship.io/courses/flutter-firebase/)
+Этот код позволяет заполнить базу данных вопросами для викторины о Карелии
 
+## Инструкции
 
-## Instructions
+Требуется Node.js версии 8 или выше.
 
-Requires Node.js >= 8. 
-
-1. Clone this repo, cd into it, and run `npm install`. 
-2. Download your service account (generate private key) from the [Firebase Console](https://console.firebase.google.com) under settings, then save it in the root of this project as `credentials.json`.
-3. Run `node quizzes.js` and `node topics.js`
-
+1. Перейдите в эту директорию и выполните команду `npm install`. 
+2. Загрузите ваш сервисный аккаунт (сгенерируйте приватный ключ) из Firebase Console в разделе настроек и сохраните его в эту директорию под именем `credentials.json`.
+3. Выполните команды `node quizzes.js` и `node topics.js`
 
 https://console.firebase.google.com/u/0/project/museumguide-fde28/settings/serviceaccounts/adminsdk

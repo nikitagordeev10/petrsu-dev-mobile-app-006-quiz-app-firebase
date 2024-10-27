@@ -10,8 +10,8 @@
       },
       "ios": {
         "default": {
-          "projectId": "dev-helder-quizapp",
-          "appId": "1:460922085051:ios:c459cca768fcf68fc2d39e",
+          "projectId": "museumguide-fde28",
+          "appId": "1:103731987395:ios:1f52bbca155d319cb17376",
           "uploadDebugSymbols": false,
           "fileOutput": "ios/Runner/GoogleService-Info.plist"
         }
